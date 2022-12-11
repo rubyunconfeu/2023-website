@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('./assets/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('./assets/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fce9e9;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Mona Sans';
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+header img {
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 1;
+}
+header .year {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 11rem;
+  margin-top: -14rem;
+  font-family: 'Mona Sans';
+  font-size: 15rem;
+  font-weight: 800;
+  letter-spacing: -1rem;
+  line-height: 17rem;
+  color: #5c4594;
+}
+header .city {
+  display: flex;
+  justify-content: center;
+  gap: 11rem;
+  margin-top: -4rem;
+  font-family: 'Mona Sans';
+  font-size: 8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #5c4594;
+}
+section {
+  margin-bottom: 3rem;
+  max-width: 43rem;
+  font-size: 1.3rem;
+}
+h1 {
+  margin: 0 0 1rem;
+  font-family: 'Mona Sans';
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #5c4594;
+}
+h2 {
+  margin: 0 0 1rem;
+  font-family: 'Mona Sans';
+  font-size: 4rem;
+  font-weight: 800;
+  color: #5c4594;
+  border-bottom: 4px solid #5c4594;
+}
+h3 {
+  color: #5c4594;
+}
+footer {
+  margin-bottom: 3rem;
+}
+.link-icon {
+  height: 1rem;
+  margin-right: 0.4rem;
+}
