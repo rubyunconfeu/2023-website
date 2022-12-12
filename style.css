@@ -6,6 +6,14 @@
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
+@font-face {
+  font-family: 'Hubot Sans';
+  src:
+    url('./assets/Hubot-Sans.woff2') format('woff2 supports variations'),
+    url('./assets/Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -13,7 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: 'Mona Sans';
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 header {
   display: flex;
@@ -32,7 +41,7 @@ header .year {
   align-items: center;
   gap: 11rem;
   margin-top: -14rem;
-  font-family: 'Mona Sans';
+  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15rem;
   font-weight: 800;
   letter-spacing: -1rem;
@@ -44,7 +53,7 @@ header .city {
   justify-content: center;
   gap: 11rem;
   margin-top: -4rem;
-  font-family: 'Mona Sans';
+  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 8rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -57,14 +66,14 @@ section {
 }
 h1 {
   margin: 0 0 1rem;
-  font-family: 'Mona Sans';
+  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 4.5rem;
   font-weight: 800;
   color: #5c4594;
 }
 h2 {
   margin: 0 0 1rem;
-  font-family: 'Mona Sans';
+  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 4rem;
   font-weight: 800;
   color: #5c4594;
