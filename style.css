@@ -63,6 +63,7 @@ section {
   margin-bottom: 3rem;
   max-width: 43rem;
   font-size: 1.3rem;
+  line-height: 1.9rem;
 }
 h1 {
   margin: 0 0 1rem;
@@ -76,6 +77,7 @@ h2 {
   font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 4rem;
   font-weight: 800;
+  line-height: 4.5rem;
   color: #5c4594;
   border-bottom: 4px solid #5c4594;
 }
