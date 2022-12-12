@@ -24,6 +24,9 @@ body {
   font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
+body > * {
+  margin: 0 2rem 3rem;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -32,6 +35,7 @@ header {
 header img {
   display: inline-block;
   margin: 0 auto;
+  max-width: 90vw;
   z-index: 1;
 }
 header .year {
