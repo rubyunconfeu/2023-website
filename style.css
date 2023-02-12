@@ -31,6 +31,10 @@ body {
     radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.8) 10%, rgba(0,0,0,0) 80%),
     radial-gradient(circle at -30% 100%, rgb(91, 69, 148) 10%, rgba(0,0,0,0) 40%);
 }
+body.no-bg {
+  background-image: none;
+}
+
 body > * {
   margin: 0 2rem 3rem;
 }
