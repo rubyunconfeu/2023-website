@@ -95,6 +95,11 @@ h3 {
   font-family: 'XanhMono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #5c4594;
 }
+
+a {
+  color: #E85554;
+}
+
 footer {
   margin-bottom: 3rem;
 }
