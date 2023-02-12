@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding-top: 5rem;;
   font-family: 'JetBrains Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #5B4594;
@@ -34,6 +35,53 @@ body > * {
   margin: 0 2rem 3rem;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background-color: #5B4594;
+  z-index: 100;
+}
+nav > div {
+  margin: 0 2rem;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+nav ul li a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a.tickets {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  background-color: #E85554;
+  color: #5B4594;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 800px) {
+  nav ul li a:not(.tickets) {
+    display: none;
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -44,6 +92,7 @@ header img {
   display: inline-block;
   margin: 0 auto;
   width: 100%;
+  max-width: 90vw;
   z-index: 1;
 }
 
@@ -58,6 +107,7 @@ section {
   max-width: 43rem;
   font-size: 1.3rem;
   line-height: 1.9rem;
+  scroll-margin-top: 8rem;
 
   background-repeat: no-repeat;
   background-position: 0 17px;
