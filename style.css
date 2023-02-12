@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Mona Sans';
+  font-family: 'JetBrains Mono';
   src:
-    url('./assets/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('./assets/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
+    url('./assets/JetBrainsMono-Regular.woff2') format('woff2 supports variations'),
+    url('./assets/JetBrainsMono-Regular.woff2') format('woff2-variations');
+  font-weight: 400;
 }
 @font-face {
-  font-family: 'Hubot Sans';
+  font-family: 'XanhMono';
   src:
-    url('./assets/Hubot-Sans.woff2') format('woff2 supports variations'),
-    url('./assets/Hubot-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
+    url('./assets/XanhMono-Italic.ttf') format('truetype supports variations'),
+    url('./assets/XanhMono-Italic.ttf') format('truetype-variations');
+  font-weight: 400;
+  font-style: italic;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 body > * {
@@ -38,54 +38,24 @@ header img {
   max-width: 90vw;
   z-index: 1;
 }
-header .year {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 11rem;
-  margin-top: -14rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15rem;
-  font-weight: 800;
-  letter-spacing: -1rem;
-  line-height: 17rem;
-  color: #5c4594;
-}
-header .city {
-  display: flex;
-  justify-content: center;
-  gap: 11rem;
-  margin-top: -4rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 8rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  color: #5c4594;
-}
 section {
   margin-bottom: 3rem;
   max-width: 43rem;
   font-size: 1.3rem;
   line-height: 1.9rem;
-}
-h1 {
-  margin: 0 0 1rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 4.5rem;
-  font-weight: 800;
-  color: #5c4594;
+  color: #5B4594;
 }
 h2 {
   margin: 0 0 1rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 4rem;
-  font-weight: 800;
+  font-family: 'XanhMono', sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  text-decoration: underline;
   line-height: 4.5rem;
-  color: #5c4594;
-  border-bottom: 4px solid #5c4594;
+  color: #5B4594;
 }
 h3 {
+  font-family: 'XanhMono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #5c4594;
 }
 footer {
