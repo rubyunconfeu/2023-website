@@ -17,13 +17,18 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #fce9e9;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   margin: 0;
   font-family: 'JetBrains Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #5B4594;
+
+  background-image:
+    radial-gradient(circle at -20% 40%, rgba(232,85,84,0.8) 10%, rgba(0,0,0,0) 60%),
+    radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.8) 10%, rgba(0,0,0,0) 80%),
+    radial-gradient(circle at -30% 100%, rgb(91, 69, 148) 10%, rgba(0,0,0,0) 40%);
 }
 body > * {
   margin: 0 2rem 3rem;
@@ -32,7 +37,7 @@ body > * {
 header {
   display: flex;
   flex-direction: column;
-  margin: 0 0 2rem;
+  margin: 5rem 0 5rem;
   max-width: 1200px;
 }
 header img {
@@ -139,9 +144,10 @@ a {
 }
 
 footer {
-  margin-bottom: 3rem;
+  margin-bottom: 30rem;
 }
 footer .logo {
   display: flex;
   justify-content: center;
+  margin-top: 20rem;
 }
