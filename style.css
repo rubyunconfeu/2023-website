@@ -23,6 +23,7 @@ body {
   margin: 0;
   font-family: 'JetBrains Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
+  color: #5B4594;
 }
 body > * {
   margin: 0 2rem 3rem;
@@ -48,8 +49,6 @@ section {
   background-repeat: no-repeat;
   background-position: 0 17px;
   background-size: 3rem;
-
-  color: #5B4594;
 }
 section#what-is-unconf {
   background-image: url('./assets/sections/interface-essential-question-help-square.svg');
@@ -89,21 +88,24 @@ h2 {
   font-style: italic;
   text-decoration: underline;
   line-height: 4.5rem;
-  color: #5B4594;
 }
 h3 {
   font-family: 'XanhMono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #5c4594;
 }
 
 a {
   color: #E85554;
 }
 
-footer {
-  margin-bottom: 3rem;
-}
 .link-icon {
   height: 1rem;
   margin-right: 0.4rem;
+}
+
+footer {
+  margin-bottom: 3rem;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
 }
