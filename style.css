@@ -194,9 +194,15 @@ a {
   color: #E85554;
 }
 
-.link-icon {
+ul.social-links {
+  padding: 0;
+}
+ul.social-links li {
+  list-style: none;
+}
+ul.social-links li .link-icon {
   height: 1rem;
-  margin-right: 0.4rem;
+  margin-right: 0.6rem;
 }
 
 footer {
