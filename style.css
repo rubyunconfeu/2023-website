@@ -183,6 +183,7 @@ h2 {
   font-style: italic;
   font-weight: 400;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
   line-height: 4.5rem;
 }
 h3 {
