@@ -1,97 +1,215 @@
 @font-face {
-  font-family: 'Mona Sans';
+  font-family: 'JetBrains Mono';
   src:
-    url('./assets/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('./assets/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
+    url('./assets/JetBrainsMono-Regular.woff2') format('woff2 supports variations'),
+    url('./assets/JetBrainsMono-Regular.woff2') format('woff2-variations');
+  font-weight: 400;
 }
 @font-face {
-  font-family: 'Hubot Sans';
+  font-family: 'XanhMono';
   src:
-    url('./assets/Hubot-Sans.woff2') format('woff2 supports variations'),
-    url('./assets/Hubot-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
+    url('./assets/XanhMono-Italic.ttf') format('truetype supports variations'),
+    url('./assets/XanhMono-Italic.ttf') format('truetype-variations');
+  font-weight: 400;
+  font-style: italic;
 }
+
 body {
   display: flex;
   flex-direction: column;
-  background-color: #fce9e9;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-top: 5rem;;
+  font-family: 'JetBrains Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
+  color: #5B4594;
+
+  background-image:
+    radial-gradient(circle at -20% 40%, rgba(232,85,84,0.8) 10%, rgba(0,0,0,0) 60%),
+    radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.8) 10%, rgba(0,0,0,0) 80%),
+    radial-gradient(circle at -30% 100%, rgb(91, 69, 148) 10%, rgba(0,0,0,0) 40%);
 }
+body.no-bg {
+  background-image: none;
+}
+
 body > * {
   margin: 0 2rem 3rem;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background-color: #5B4594;
+  z-index: 100;
+}
+nav > div {
+  margin: 0 2rem;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+nav ul li a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a.tickets {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  background-color: #E85554;
+  color: #5B4594;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 800px) {
+  nav ul li a:not(.tickets) {
+    display: none;
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin: 5rem 0 5rem;
+  max-width: 1200px;
 }
 header img {
   display: inline-block;
   margin: 0 auto;
+  width: 100%;
   max-width: 90vw;
   z-index: 1;
 }
-header .year {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 11rem;
-  margin-top: -14rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15rem;
-  font-weight: 800;
-  letter-spacing: -1rem;
-  line-height: 17rem;
-  color: #5c4594;
+
+main {
+  max-width: 1200px;
+  min-width: 450px;
 }
-header .city {
-  display: flex;
-  justify-content: center;
-  gap: 11rem;
-  margin-top: -4rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 8rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  color: #5c4594;
-}
+
 section {
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 18rem;
+  padding-left: 10rem;
   max-width: 43rem;
   font-size: 1.3rem;
   line-height: 1.9rem;
+  scroll-margin-top: 8rem;
+
+  background-repeat: no-repeat;
+  background-position: 0 17px;
+  background-size: 3rem;
 }
-h1 {
-  margin: 0 0 1rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 4.5rem;
-  font-weight: 800;
-  color: #5c4594;
+@media screen and (max-width: 500px) {
+  section {
+    margin-left: 0rem;
+    padding-left: 3.5rem;
+  }
 }
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  section {
+    margin-left: 0rem;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  section {
+    margin-left: 3rem;
+    padding-left: 8rem;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  section {
+    margin-left: 7rem;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  section {
+    margin-left: 10rem;;
+  }
+}
+section#what-is-unconf {
+  background-image: url('./assets/sections/interface-essential-question-help-square.svg');
+}
+section#talk {
+  background-image: url('./assets/sections/content-files-open-book.svg');
+}
+section#history {
+  background-image: url('./assets/sections/email-mail-chat.svg');
+}
+section#food {
+  background-image: url('./assets/sections/food-drink-pizza.svg');
+}
+section#childcare {
+  background-image: url('./assets/sections/food-drink-desert-cotton-candy.svg');
+}
+section#location {
+  background-image: url('./assets/sections/real-estate-building-house.svg');
+}
+section#inclusivity-diversity {
+  background-image: url('./assets/sections/multiple-user.svg');
+}
+section#code-of-conduct {
+  background-image: url('./assets/sections/hand-cross-finger-heart.svg');
+}
+section#accessibility {
+  background-image: url('./assets/sections/business-products-deal-handshake.svg');
+}
+section#contact {
+  background-image: url('./assets/sections/email-envelope-close.svg');
+}
+
 h2 {
   margin: 0 0 1rem;
-  font-family: 'Hubot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 4rem;
-  font-weight: 800;
+  font-family: 'XanhMono', sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
   line-height: 4.5rem;
-  color: #5c4594;
-  border-bottom: 4px solid #5c4594;
 }
 h3 {
-  color: #5c4594;
+  font-family: 'XanhMono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-footer {
-  margin-bottom: 3rem;
+
+a {
+  color: #E85554;
 }
-.link-icon {
+
+ul.social-links {
+  padding: 0;
+}
+ul.social-links li {
+  list-style: none;
+}
+ul.social-links li .link-icon {
   height: 1rem;
-  margin-right: 0.4rem;
+  margin-right: 0.6rem;
+}
+
+footer {
+  margin-bottom: 30rem;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
 }
