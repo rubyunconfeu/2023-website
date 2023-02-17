@@ -66,6 +66,9 @@ nav ul {
   padding: 0;
   gap: 1rem;
 }
+nav ul li {
+  color: #E85554;
+}
 nav ul li a {
   padding: 1rem 1rem;
   text-decoration: none;
@@ -171,6 +174,9 @@ section#code-of-conduct {
 }
 section#accessibility {
   background-image: url('./assets/sections/business-products-deal-handshake.svg');
+}
+section#sponsoring {
+  background-image: url('./assets/sections/ecology-organic-sun-growth.svg');
 }
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
