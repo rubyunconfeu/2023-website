@@ -27,12 +27,28 @@ body {
   color: #5B4594;
 
   background-image:
-    radial-gradient(circle at -20% 40%, rgba(232,85,84,0.8) 10%, rgba(0,0,0,0) 60%),
-    radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.8) 10%, rgba(0,0,0,0) 80%),
+    radial-gradient(circle at -20% 40%, rgba(232,85,84,0.7) 10%, rgba(0,0,0,0) 60%),
+    radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.7) 10%, rgba(0,0,0,0) 80%),
     radial-gradient(circle at -30% 100%, rgb(91, 69, 148) 10%, rgba(0,0,0,0) 40%);
 }
 body.no-bg {
   background-image: none;
+}
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  body {
+    background-image:
+      radial-gradient(circle at -20% 40%, rgba(232,85,84,0.5) 10%, rgba(0,0,0,0) 60%),
+      radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.5) 10%, rgba(0,0,0,0) 80%),
+      radial-gradient(circle at -30% 100%, rgba(91, 69, 148, 0.5) 10%, rgba(0,0,0,0) 40%);
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-image:
+      radial-gradient(circle at -20% 40%, rgba(232,85,84,0.3) 10%, rgba(0,0,0,0) 60%),
+      radial-gradient(circle at right 5%, rgba(219, 212, 196, 0.3) 10%, rgba(0,0,0,0) 80%),
+      radial-gradient(circle at -30% 100%, rgba(91, 69, 148, 0.3) 10%, rgba(0,0,0,0) 40%);
+  }
 }
 
 body > * {
