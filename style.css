@@ -191,7 +191,8 @@ section#code-of-conduct {
 section#accessibility {
   background-image: url('./assets/sections/business-products-deal-handshake.svg');
 }
-section#sponsoring {
+section#sponsoring,
+section#sponsor-silver {
   background-image: url('./assets/sections/ecology-organic-sun-growth.svg');
 }
 section#contact {
@@ -214,6 +215,21 @@ h3 {
 
 a {
   color: #E85554;
+}
+
+.sponsor__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sponsor__list {
+  text-align: left;
+  display: inline-flex;
+}
+
+.sponsor__logo img {
+  max-width: 264px;
 }
 
 ul.social-links {
