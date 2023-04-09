@@ -13,6 +13,10 @@ Website for the Ruby Unconf 2023
 
 ## Tools and assets
 
-- Icons: https://www.streamlinehq.com/icons/pixel (use `#5B4594` as color)
+- Icons: https://www.streamlinehq.com/icons/pixel
+  - use `#5B4594` as color
 - SVG minimizer: https://svgomg.net 
+  - use esp on the icons, but also for all other SVGs
 - PNG minimizer: https://tinypng.com
+  - for sponsor logos
+  
