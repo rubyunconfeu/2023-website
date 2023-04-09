@@ -218,14 +218,12 @@ a {
 }
 
 .sponsor__list {
-  list-style: none;
+  display: inline-flex;
   margin: 0;
   padding: 0;
-}
 
-.sponsor__list {
+  list-style: none;
   text-align: left;
-  display: inline-flex;
 }
 
 .sponsor__logo img {
