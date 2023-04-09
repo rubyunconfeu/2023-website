@@ -191,9 +191,11 @@ section#code-of-conduct {
 section#accessibility {
   background-image: url('./assets/sections/business-products-deal-handshake.svg');
 }
-section#sponsoring,
-section#sponsor-silver {
+section#sponsoring {
   background-image: url('./assets/sections/ecology-organic-sun-growth.svg');
+}
+section#sponsor-silver {
+  background-image: url('./assets/sections/pet-animal-dog.svg');
 }
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
