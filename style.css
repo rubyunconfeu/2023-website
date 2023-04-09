@@ -226,6 +226,11 @@ a {
   text-align: left;
 }
 
+.sponsor__logo {
+  display: inline-block;
+  margin: 2rem 0;
+}
+
 .sponsor__logo img {
   max-width: 264px;
 }
