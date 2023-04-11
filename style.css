@@ -138,8 +138,8 @@ section {
 }
 @media screen and (max-width: 500px) {
   section {
-    margin-left: 0rem;
-    padding-left: 3.5rem;
+    margin: 2rem 1rem 0;
+    padding: 5rem 0 0;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 600px) {
