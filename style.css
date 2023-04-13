@@ -231,6 +231,10 @@ a {
   text-align: left;
 }
 
+.sponsor__list li {
+  margin-right: 5%;
+}
+
 .sponsor__logo {
   display: inline-block;
   margin: 2rem 0;
