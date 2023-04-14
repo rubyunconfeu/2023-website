@@ -100,8 +100,11 @@ nav ul li a.tickets {
   border-radius: 0.5rem;
 }
 @media screen and (max-width: 800px) {
-  nav ul li a:not(.tickets) {
+  nav ul li.hide_on_small_screen {
     display: none;
+  }
+  nav ul li a.tickets {
+    padding: 0.8rem 0.5rem;
   }
 }
 
@@ -121,7 +124,6 @@ header img {
 
 main {
   max-width: 1200px;
-  min-width: 450px;
 }
 
 section {
