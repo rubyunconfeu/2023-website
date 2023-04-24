@@ -172,6 +172,9 @@ section#what-is-unconf {
 section#talk {
   background-image: url('./assets/sections/content-files-open-book.svg');
 }
+section#schedule {
+  background-image: url('./assets/sections/interface-essential-clock.svg');
+}
 section#history {
   background-image: url('./assets/sections/email-mail-chat.svg');
 }
