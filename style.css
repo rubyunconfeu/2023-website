@@ -205,6 +205,9 @@ section#sponsor-silver {
 section#sponsor-bronze {
   background-image: url('./assets/sections/pet-animal-cat.svg');
 }
+section#sponsor-community {
+  background-image: url('./assets/sections/pet-animal-bear.svg');
+}
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
 }
