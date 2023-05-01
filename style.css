@@ -241,6 +241,7 @@ a {
   grid-template-columns: repeat(3, 33%);
 }
 .sponsor__list li {
+  align-self: center;
   margin-right: 5%;
 }
 @media screen and (max-width: 801px) {
