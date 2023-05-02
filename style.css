@@ -205,6 +205,9 @@ section#sponsor-silver {
 section#sponsor-bronze {
   background-image: url('./assets/sections/pet-animal-cat.svg');
 }
+section#sponsor-community {
+  background-image: url('./assets/sections/pet-animal-bear.svg');
+}
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
 }
@@ -231,22 +234,30 @@ a {
   display: inline-flex;
   margin: 0;
   padding: 0;
-
   list-style: none;
-  text-align: left;
 }
-
+.index-sponsors .sponsor__list {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
 .sponsor__list li {
+  align-self: center;
   margin-right: 5%;
 }
-
+@media screen and (max-width: 801px) {
+  .index-sponsors .sponsor__list {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
 .sponsor__logo {
   display: inline-block;
   margin: 2rem 0;
 }
 
 .sponsor__logo img {
-  max-width: 264px;
+  width: 264px;
+  max-width: 90%;
 }
 
 ul.social-links {
