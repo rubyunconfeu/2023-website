@@ -208,6 +208,9 @@ section#sponsor-bronze {
 section#sponsor-community {
   background-image: url('./assets/sections/pet-animal-bear.svg');
 }
+section#sponsor-coffee {
+  background-image: url('./assets/sections/food-drink-coffee.svg');
+}
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
 }
