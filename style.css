@@ -233,6 +233,14 @@ a {
   color: #E85554;
 }
 
+.schedule-button {
+  display: inline block;
+  margin: 2em 0;
+  padding: 1em 2em;
+  background-color: #5B4594;
+  border-radius: 5px;
+}
+
 .sponsor__list {
   display: inline-flex;
   margin: 0;
