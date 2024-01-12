@@ -214,6 +214,13 @@ section#sponsor-coffee {
 section#contact {
   background-image: url('./assets/sections/email-envelope-close.svg');
 }
+section.no-indent {
+  margin-left: 0;
+  padding-left: 0;
+}
+section img {
+  max-width: 100%;
+}
 
 h2 {
   margin: 0 0 1rem;
